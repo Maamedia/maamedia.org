@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mito"
+		]
+	},
+	"welcome-text": "Tervetuloa!",
+	"ourwork-text": "Katso työmme",
+	"create-account": "Luo käyttäjätunnus",
+	"nav-home": "Koti",
+	"nav-ourwork": "Työmme",
+	"nav-contact": "Yhteys",
+	"nav-about": "Tietoa meistä",
+	"nav-login": "Kirjaudu sisään",
+	"founded-by": "Perustajat",
+	"from-finland": "Suomesta",
+	"from-indonesia": "Indonesiasta",
+	"text-and": "ja"
+}
