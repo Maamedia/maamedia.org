@@ -1,0 +1,28 @@
+{
+	"@metadata": {
+		"authors": [
+			"Mito"
+		]
+	},
+	"welcome-text": "Selamat datang!",
+	"ourwork-text": "Lihat pekerjaan kami",
+	"create-account": "Buat nama pengguna",
+	"nav-home": "Halaman Utama",
+	"nav-ourwork": "Pekerjaan kita",
+	"nav-contact": "Kontak",
+	"nav-about": "Informasi tentang kami",
+	"nav-login": "Masuk log",
+	"founded-by": "Pendiri",
+	"from-finland": "Dari Finlandia",
+	"from-indonesia": "Dari Indonesia",
+	"text-and": "dan",
+		"header-text1": "Kami bukan perusahaan atau organisasi, tetapi kami adalah proyek sumber terbuka gratis yang disponsori dan dikelola oleh komunitas yang memproduksi alat online gratis dan memiliki buku panduan Masymanwiki.",
+    "header-text2": "Sasaran kami adalah untuk mempromosikan keterampilan dan kecerdasan orang-orang untuk mempelajari berbagai hal dengan benar, tetapi juga untuk membantu mereka dalam hal-hal sehari-hari dengan alat kualitas kami.",
+    "work-masymanwiki": "Proyek utama kami adalah Masymanwiki. Ini adalah buku panduan online gratis, yang dengannya orang-orang dapat belajar melakukan sesuatu. Masymanwiki dapat diedit oleh siapa saja dan tidak memerlukan biaya. Masymanwiki penuh dengan panduan berkualitas.",
+    "work-visualeditor": "Visual Editor adalah ekstensi MediaWiki, yang diaktifkan di semua wiki Maamedia. Ini adalah editor WYSIWYG yang mudah membuat halaman dan artikel untuk wiki Maamedia dengan cepat",
+    "work-tools": "Selain wiki, kami juga mengembangkan alat online gratis untuk membantu orang dan bisnis dalam segala hal. Alat-alat tersebut termasuk utilitas penggajian dan perangkat lunak pembangunan silsilah keluarga. Anda dapat mengidentifikasi sendiri semua alat yang dikembangkan oleh Maamedia dari karakter berikut, yang harus ditemukan di beberapa bagian halaman alat:",
+    "work-community": "Kami telah mengembangkan layanan komunitas gratis dan aman untuk semua orang, termasuk pengguna non-wiki. Ini termasuk Maasome, seperti Facebook, yang memiliki fitur berbeda dan bagus. Kami juga telah mengembangkan layanan Obrolan gratis dan nantinya akan ada aplikasi perpesanan seperti WhatsApp online.",
+    "work-act": "Tim Pembuat Akun (Account Creator Team) (ACT) adalah sistem online yang memungkinkan siapa saja untuk meminta pengguna wiki melalui berbagai tindakan (jika alamat IP diblokir, dll.) Tim Pembuat Akun terdiri dari halaman permintaan serta sistem permintaan yang menerima semua permintaan. Relawan dapat menjadi anggota ACT, yaitu menerima atau menolak permintaan akun dari sistem mereka.",
+    "work-phabricator": "Phabricator adalah perangkat lunak sumber terbuka yang menyediakan sistem manajemen tugas dan sistem bug lengkap. Anda dapat mendaftar di sana dengan cara yang sama seperti di wiki.",
+    "button-phab": "Pergi ke Phabricator"
+}
