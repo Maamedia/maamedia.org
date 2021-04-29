@@ -13,6 +13,8 @@ $lang = $_GET['lang'] ?? 'en';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Maamedia is a free, open source project that makes free tools and wikis. Made in Finland (Mito) and Indonesia (Puma).">
+    <link rel="stylesheet" href="https://crm.maamedia.org/drafts/christmas/assets/css/global.css">
+<link rel='stylesheet' id='google-font-quicksand-montserrat-poppins-css' href='//fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C500%2C600%2C700%257CPoppins%3A400%2C400i%2C700%2C700i%257CMontserrat%3A400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.5' media='all'/>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -27,7 +29,9 @@ $lang = $_GET['lang'] ?? 'en';
   float: left;
   width: 20%; /* The width is 20%, by default */
 }
-
+body {
+    font-family: 'Quicksand';
+}
 .main {
   float: left;
   width: 60%; /* The width is 60%, by default */
@@ -131,6 +135,7 @@ function navMaamedia() {
 }
 
 </script>
+
 <div class="topnav">
   <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;"><?php echo( GetTranslation( 'text-maamedia' ) ); ?></a>
   <!-- Navigation links (hidden by default) -->
@@ -212,7 +217,7 @@ function navMaamedia() {
 </div>
 
 <center>
-<h1><?php echo( GetTranslation( 'feel-ca' ) ); ?>.</h1><span style="color:white; background-color:red" class="badge badge-danger"><?php echo( GetTranslation( 'recommended' ) ); ?></span>
+<h1><?php echo( GetTranslation( 'feel-ca' ) ); ?></h1><span style="color:white; background-color:red" class="badge badge-danger"><?php echo( GetTranslation( 'recommended' ) ); ?></span>
 <h1><?php echo( GetTranslation( 'feel-create' ) ); ?></h1>
 <h1><?php echo( GetTranslation( 'feel-good' ) ); ?></h1>
 <h1><?php echo( GetTranslation( 'feel-enjoy' ) ); ?></h1>
