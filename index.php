@@ -168,6 +168,15 @@ function navMaamedia() {
   </a>
 </div>
 <header class="text-white text-center">
+<!--SITENOTICE-->
+<div align="center">
+ <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" 
+ loop="7" scrollamount="1" scrolldelay="2" width="100%">
+ <span style="font-size: 20px;color:#FFFFFF">
+ Dear visitor! Maamedia wikis have been updated to MediaWiki version 1.36. The update was made on the night of May 7th to May 8th. So mistakes can also be expected for the reader, and not everything may be displayed correctly. Errors are being fixed!!</span></marquee>
+</div>
+
+<!--SITENOTICE END-->
 
 <h1 class="masthead-heading text-uppercase mb-0">
 					<?php echo( GetTranslation( 'welcome-text' ) ); ?>
