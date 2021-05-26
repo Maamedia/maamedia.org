@@ -186,13 +186,17 @@ function navMaamedia() {
 <p style="padding-left: 30px"><a href="mailto:mito@maamedia.org">mito@maamedia.org</a></p> 
 <p style="padding-left: 30px"><a href="mailto:puma@maamedia.org">puma@maamedia.org</a></p>
 <div class="section-email-founders">Note: these two are emails from the founders of Maamedia. You can send a message to them in English. <br>You can also send to Puma in Indonesia and to Mito in Finnish. If you are locked or blocked in the Maamedia wiki, please do not send requests to open these emails.</div>
-<div class="section-email-content">Questions related to partnerships:</div>
-<p style="padding-left: 30px"><a href="mailto:business@maamedia.org">business@maamedia.org</a></p><br><br>
 <div class="section-email-content">Maamedia wikis stewards email:</div>
 <p style="padding-left: 30px"><a href="mailto:stewards@maamedia.org">stewards@maamedia.org</a></p><br><br>
 
-
-
+<h1>Discords</h1>
+<div style="font-size:120%">Maamedia use two Discord servers: <i>Maamedia</i> (<a href="https://discord.gg/ktvA3CD8VJ">link)</a> and <i>Masymanwiki</i>.</div>
+<div style="font-size:130%; color:green;">See all Discord channels listed <a href="https://meta.maamedia.org/wiki/Discord/Channels">here</a>!</div>
+<br>
+<br>
+<h1>See also</h1>
+<li><a href="https://meta.maamedia.org/wiki/Contact_to_Maamedia">Contact to Maamedia | Meta-Wiki</a></li>
+<li><a href="https://www.niagahoster.co.id/kb/spesifikasi-server-dan-data-center-niagahoster">Niagahoster Data Centers</a></li>
 <!--Footer-->
 <footer style="height:auto; color:white; background-color:black">
   <h1 style="color:white; background-color:black; padding:40px; margin:0; text-align:center;">Made with 🤍 Maamedia</h1>
