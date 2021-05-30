@@ -1,14 +1,8 @@
-<?php
-require_once __DIR__ . '/GetTranslations.php';
-
-$lang = $_GET['lang'] ?? 'en';
-?>
-
 <!DOCTYPE html>
 <html>
 
 <head>
-  <title><?php echo( GetTranslation( 'title-maamedia' ) ); ?></title>
+  <title>Maamedia</title>
   <meta charset="utf-8">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -137,30 +131,15 @@ function navMaamedia() {
 </script>
 
 <div class="topnav">
-  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;"><?php echo( GetTranslation( 'text-maamedia' ) ); ?></a>
+  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;">Maamedia</a>
   <!-- Navigation links (hidden by default) -->
   <div id="maamediaLinks">
-    <a href="/"><span class="fa fa-fw fa-home"></span> <?php echo( GetTranslation( 'nav-home' ) ); ?></a>
-    <a href="#ourwork"><span class="fa fa-server"></span> <?php echo( GetTranslation( 'nav-ourwork' ) ); ?></a>
-    <a href="/contact"><span class="fa fa-inbox"></span> <?php echo( GetTranslation( 'nav-contact' ) ); ?></a>
-    <a href="/about"><span class="fa fa-info-circle"></span> <?php echo( GetTranslation( 'nav-about' ) ); ?></a>
-    <a href="https://meta.maamedia.org/wiki/Special:CreateAccount"><span class="glyphicon glyphicon-user"></span> <?php echo( GetTranslation( 'create-account' ) ); ?></a>
-    <a href="https://meta.maamedia.org/wiki/Special:UserLogin"><span class="glyphicon glyphicon-log-in"></span> <?php echo( GetTranslation( 'nav-login' ) ); ?></a>
-	<form method="get">
-									<select name="lang" onchange="this.form.submit()">
-										<?php
-
-										$i18nDirectory = scandir( 'i18n' );
-										foreach ( $i18nDirectory as $i18nFile ) {
-											$languageCode = str_replace( '.json', '', $i18nFile );
-											if ( $languageCode !== 'qqq' && $languageCode !== '..' && $languageCode !== '.' ) {
-												echo( '<option value="' . $languageCode . '"' . ( $lang == $languageCode ? ' selected' : null ) . '>' . LOCALE_GET_DISPLAY_NAME( $languageCode, $languageCode ) . '</option>' );
-											}
-										}
-
-										?>
-									</select>
-								</form>
+    <a href="/"><span class="fa fa-fw fa-home">Home</a>
+    <a href="#ourwork"><span class="fa fa-server"></span>Our work</a>
+    <a href="/contact"><span class="fa fa-inbox"></span>Contact</a>
+    <a href="/about"><span class="fa fa-info-circle"></span> About us</a>
+    <a href="https://meta.maamedia.org/wiki/Special:CreateAccount"><span class="glyphicon glyphicon-user"></span> Create account</a>
+    <a href="https://meta.maamedia.org/wiki/Special:UserLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a>
   </div>
   <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
   <a href="javascript:void(0);" class="icon" onclick="navMaamedia()">
@@ -168,91 +147,77 @@ function navMaamedia() {
   </a>
 </div>
 <header class="text-white text-center">
-<!--SITENOTICE-->
-<div align="center">
- <marquee behavior="alternate" bgcolor="#bb3434" direction="left" height:="" 
- loop="7" scrollamount="1" scrolldelay="2" width="100%">
- <span style="font-size: 20px;color:#FFFFFF">
- Dear visitor! Maamedia wikis have been updated to MediaWiki version 1.36. The update was made on the night of May 7th to May 8th. So mistakes can also be expected for the reader, and not everything may be displayed correctly. Errors are being fixed!!</span></marquee>
-</div>
-
+<!--SITENOTICE -->
 <!--SITENOTICE END-->
 
 <h1 class="masthead-heading text-uppercase mb-0">
-					<?php echo( GetTranslation( 'welcome-text' ) ); ?>
+					Welcome
 				</h1>
-<a href="https://meta.maamedia.org/wiki/Special:CreateAccount"><button class="button ca"><?php echo( GetTranslation( 'create-account' ) ); ?></button></a>
-<a href="#ourwork"><button class="button work"><?php echo( GetTranslation( 'ourwork-text' ) ); ?>
+<a href="https://meta.maamedia.org/wiki/Special:CreateAccount"><button class="button ca">Create account</button></a>
+<a href="#ourwork"><button class="button work">Our work
 				</h1></button></a>
 
 <!--This is text, which appears in head on website.-->
 					<div class="col-lg-12 ml-auto">
 						<p class="lead">
-						    <?php echo( GetTranslation( 'founded-by' ) ); ?> <a href="https://meta.maamedia.org/wiki/User:Mito">Mito</a> <span style="font-size: 0.95em; color:#555; position: relative;">(<?php echo( GetTranslation( 'from-finland' ) ); ?>)</span> <?php echo( GetTranslation( 'text-and' ) ); ?> <a href="https://meta.maamedia.org/wiki/User:Puma">Puma</a> <span style="font-size: 0.95em; color:#555; position: relative;">(<?php echo( GetTranslation( 'from-indonesia' ) ); ?>)</span>.
+						    Founded by <a href="https://meta.maamedia.org/wiki/User:Mito">Mito</a> <span style="font-size: 0.95em; color:#555; position: relative;">(from Finland)</span> and <a href="https://meta.maamedia.org/wiki/User:Puma">Puma</a> <span style="font-size: 0.95em; color:#555; position: relative;">(from Indonesia)</span>.
 						  </p>
 						  
 				</div>
 				<hr>
-<div style="font-size:190%"><?php echo( GetTranslation( 'header-text1' ) ); ?></div>
+<div style="font-size:190%">We are not a company or organization, but we are a community-sponsored and maintained free open source project that manufactures free online tools and owns the guidebook Masymanwiki.</div>
 <hr>
-<div style="font-size:150%"><?php echo( GetTranslation( 'header-text2' ) ); ?></div>
+<div style="font-size:150%">Our goal is to promote people’s skill and intelligence to learn things correctly, but also to help them with everyday things with our quality tools.</div>
 </header>
 <section class="page-section ourwork" id="ourwork">
 <div class="container">
 <div class="row">
 <div class="col-lg-12 text-center">
-<h2 class="page-section-heading text-uppercase"><?php echo( GetTranslation( 'nav-ourwork' ) ); ?></h2></div></div></div>
+<h2 class="page-section-heading text-uppercase">Our work</h2></div></div></div>
 <div class="col-lg-12 text-center">
 <img src="https://commons.maamedia.org/images/b/b0/Masymanwiki_Logo.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">Masymanwiki</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-masymanwiki' ) ); ?></div>
-<hr>
-<img src="https://commons.maamedia.org/images/a/af/Maamedia_Meta-Wiki_-_VisualEditor_Welcome.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">VisualEditor</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-visualeditor' ) ); ?></div>
+<div style="font-size:250%">Masymanwiki</div><div style="font-size:150%;">Our main project is Masymanwiki. It is free online guide book, with which people can learn to do things. Masymanwiki can be edited by anyone and costs nothing. Masymanwiki is full of quality guides.</div>
 <hr>
 <img src="https://commons.maamedia.org/images/9/9d/Maamedia_Tools_Logo.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">Tools</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-tools' ) ); ?> <br><img src="https://commons.maamedia.org/images/4/40/Powered_by_MaamediaTools.png" style="max-width:50%;height:auto;">
+<div style="font-size:250%">Tools</div><div style="font-size:150%;">In addition to wikis, we also develop free online tools to help people and businesses with everything. Such tools include payroll utilities and family tree building software. You can identify all the tools developed by Maamedia yourself from the following character, which must be found in some part of the tool page: <br><img src="https://commons.maamedia.org/images/4/40/Powered_by_MaamediaTools.png" style="max-width:50%;height:auto;">
 </div>
 <hr>
 <img src="https://commons.maamedia.org/images/b/b2/Maamedia_Community_Services.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">Community Services</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-community' ) ); ?></div>
+<div style="font-size:250%">Community Services</div><div style="font-size:150%;">We have developed free and secure community services for all people, including non-wiki users. These include Maasome, like Facebook, which has different and good features. We’ve also developed a free Chat service and later there will be a messaging app like WhatsApp online.</div>
 <hr>
 <img src="https://commons.maamedia.org/images/2/27/Maamedia_ACT-logo.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">Account Creator Team</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-act' ) ); ?></div>
-<hr>
-<img src="https://commons.maamedia.org/images/4/47/Maamedia_Phabricator-2.png" style="max-width:100%;height:auto;">
-<div style="font-size:250%">Phabricator</div><div style="font-size:150%;"><?php echo( GetTranslation( 'work-phabricator' ) ); ?></div>
-<a href="https://phabricator.maamedia.org"><button class="btn btn-primary"><?php echo( GetTranslation( 'button-phab' ) ); ?></button></a>
+<div style="font-size:250%">Account Creator Team</div><div style="font-size:150%;">The Account Creator Team (ACT) is an online system that allows anyone to request a wiki user through various measures (if the IP address is blocked, etc.) The Account Creator Team consists of a request page as well as a request system that receives all requests. Volunteers can be ACT members, that is, accept or reject account requests from their system.</div>
 <hr>
 </div>
 
 <center>
-<h1><?php echo( GetTranslation( 'feel-ca' ) ); ?></h1><span style="color:white; background-color:red" class="badge badge-danger"><?php echo( GetTranslation( 'recommended' ) ); ?></span>
-<h1><?php echo( GetTranslation( 'feel-create' ) ); ?></h1>
-<h1><?php echo( GetTranslation( 'feel-good' ) ); ?></h1>
-<h1><?php echo( GetTranslation( 'feel-enjoy' ) ); ?></h1>
-<h1><?php echo( GetTranslation( 'feel-appreciate' ) ); ?></h1><span style="color:white; background-color:red" class="badge badge-danger"><?php echo( GetTranslation( 'at-all-times' ) ); ?></span>
+<h1>Create free account.</h1><span style="color:white; background-color:red" class="badge badge-danger">Recommended</span>
+<h1>Create free Masymanwiki article.</h1>
+<h1>Get good feelings and help others.</h1>
+<h1>Enjoy.</h1>
+<h1>We appreciate you.</h1><span style="color:white; background-color:red" class="badge badge-danger">At all times</span>
 </center>
 <div class="container">
   <div class="jumbotron">
-    <h1><?php echo( GetTranslation( 'we-are-maamedia' ) ); ?></h1>
+    <h1>We are Maamedia, a perfect family.</h1>
   </div>
 </div>
+
 <!--Footer-->
 <footer style="height:auto; color:white; background-color:black">
-  <h1 style="color:white; background-color:black; padding:40px; margin:0; text-align:center;"><?php echo( GetTranslation( 'made-with' ) ); ?> 🤍 <?php echo( GetTranslation( 'text-maamedia' ) ); ?></h1>
+  <h1 style="color:white; background-color:black; padding:40px; margin:0; text-align:center;">Made with 🤍 Maamedia</h1>
 <div style="border-radius: 3px; max-width: 800px; padding: 15px; margin:auto;margin-top: 15px;color: #7b7b7b;" align="center">
-         <i class="fa fa-language"></i> <a href="https://meta.maamedia.org/wiki/Special:Translate?group=Maamedia.org"><?php echo( GetTranslation( 'footer-translate' ) ); ?></a> 
-    <div style="font-size:140%"><?php echo( GetTranslation( 'footer-legal' ) ); ?></div>
-         <a href="/privacy-policy"><?php echo( GetTranslation( 'footer-pp' ) ); ?></a><br>
-         <a href="/tos"><?php echo( GetTranslation( 'footer-tos' ) ); ?></a><hr style="margin: 8px;">
-    <div style="font-size:140%"><?php echo( GetTranslation( 'footer-contact' ) ); ?></div>
+    <div style="font-size:140%">Legal Information</div>
+         <a href="/privacy-policy">Privacy Policy</a><br>
+         <a href="/tos">Terms of Use</a><hr style="margin: 8px;">
+    <div style="font-size:140%">Contact to Maamedia</div>
     <i class="fa fa-envelope"></i> <a href="mailto:info@maamedia.org">info@maamedia.org</a><hr style="margin: 8px;">
-    <div style="font-size:140%"><?php echo( GetTranslation( 'footer-help' ) ); ?></div>
-        <a href="/faq"><?php echo( GetTranslation( 'footer-faq' ) ); ?></a><br>
-        <a href="https://crm.maamedia.org/support"><?php echo( GetTranslation( 'footer-support' ) ); ?></a><hr style="margin: 8px;">
-    <div style="font-size:140%"><?php echo( GetTranslation( 'footer-source' ) ); ?></div>
-    <i class="fa fa-github"></i> <a href="https://github.com/maamedia"><?php echo( GetTranslation( 'footer-github' ) ); ?></a><br>
-        <a href="/coding"><?php echo( GetTranslation( 'footer-code' ) ); ?></a>
+    <div style="font-size:140%">Help</div>
+        <a href="/faq">FAQ</a><br>
+        <a href="https://crm.maamedia.org/support">Support</a><hr style="margin: 8px;">
+    <div style="font-size:140%">Source code</div>
+    <i class="fa fa-github"></i> <a href="https://github.com/maamedia">GitHub</a><br>
+        <a href="/coding">Coding in Maamedia</a>
     
         </div>
 </footer>
