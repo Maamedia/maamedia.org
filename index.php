@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Maamedia</title>
+  <html prefix="og: https://maamedia.org/#">
+  <html lang="en">
   <meta charset="utf-8">
-  <meta charset="utf-8">
+  <meta property="og:url" content="https://maamedia.org" />
+  <meta name="DC.element" content="Value" />
+  <meta name="DCTERMS.element" content="Value" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Maamedia is a free, open source project that makes free tools and wikis. Made in Finland (Mito) and Indonesia (Puma).">
+  <meta name="keywords" content="Maamedia, Masymanwiki, Maamedia Tools, toolskit, free guides, guidebook, free guidebook, free online tools, free online social network, how to">
+
     <link rel="stylesheet" href="https://crm.maamedia.org/drafts/christmas/assets/css/global.css">
 <link rel='stylesheet' id='google-font-quicksand-montserrat-poppins-css' href='//fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C500%2C600%2C700%257CPoppins%3A400%2C400i%2C700%2C700i%257CMontserrat%3A400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.5' media='all'/>
 
@@ -131,7 +136,7 @@ function navMaamedia() {
 </script>
 
 <div class="topnav">
-  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;">Maamedia</a>
+  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" alt="Maamedia official logo" style="width:50px; height:auto;">Maamedia</a>
   <!-- Navigation links (hidden by default) -->
   <div id="maamediaLinks">
     <a href="/"><span class="fa fa-fw fa-home">Home</a>
@@ -175,28 +180,171 @@ function navMaamedia() {
 <div class="col-lg-12 text-center">
 <h2 class="page-section-heading text-uppercase">Our work</h2></div></div></div>
 <div class="col-lg-12 text-center">
-<img src="https://commons.maamedia.org/images/b/b0/Masymanwiki_Logo.png" style="max-width:100%;height:auto;">
+<img src="https://commons.maamedia.org/images/b/b0/Masymanwiki_Logo.png" alt="Guidebook Masymanwiki's official logo." style="max-width:100%;height:auto;">
 <div style="font-size:250%">Masymanwiki</div><div style="font-size:150%;">Our main project is Masymanwiki. It is free online guide book, with which people can learn to do things. Masymanwiki can be edited by anyone and costs nothing. Masymanwiki is full of quality guides.</div>
 <hr>
-<img src="https://commons.maamedia.org/images/9/9d/Maamedia_Tools_Logo.png" style="max-width:100%;height:auto;">
+<img src="https://commons.maamedia.org/images/9/9d/Maamedia_Tools_Logo.png" alt="Maamedia Tools open source project logo." style="max-width:100%;height:auto;">
 <div style="font-size:250%">Tools</div><div style="font-size:150%;">In addition to wikis, we also develop free online tools to help people and businesses with everything. Such tools include payroll utilities and family tree building software. You can identify all the tools developed by Maamedia yourself from the following character, which must be found in some part of the tool page: <br><img src="https://commons.maamedia.org/images/4/40/Powered_by_MaamediaTools.png" style="max-width:50%;height:auto;">
 </div>
 <hr>
-<img src="https://commons.maamedia.org/images/b/b2/Maamedia_Community_Services.png" style="max-width:100%;height:auto;">
+<img src="https://commons.maamedia.org/images/b/b2/Maamedia_Community_Services.png" alt="Maamedia's community services" style="max-width:100%;height:auto;">
 <div style="font-size:250%">Community Services</div><div style="font-size:150%;">We have developed free and secure community services for all people, including non-wiki users. These include Maasome, like Facebook, which has different and good features. We’ve also developed a free Chat service and later there will be a messaging app like WhatsApp online.</div>
 <hr>
-<img src="https://commons.maamedia.org/images/2/27/Maamedia_ACT-logo.png" style="max-width:100%;height:auto;">
+<img src="https://commons.maamedia.org/images/2/27/Maamedia_ACT-logo.png" alt="Account Creator Team (ACT)" style="max-width:100%;height:auto;">
 <div style="font-size:250%">Account Creator Team</div><div style="font-size:150%;">The Account Creator Team (ACT) is an online system that allows anyone to request a wiki user through various measures (if the IP address is blocked, etc.) The Account Creator Team consists of a request page as well as a request system that receives all requests. Volunteers can be ACT members, that is, accept or reject account requests from their system.</div>
-<hr>
 </div>
 
-<center>
+<!--News Area-->
+<style>
+.article {
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.article_title {
+  margin: 0;
+}
+
+.article_excerpt {
+  transition: height 0.5s, opacity 0.5s;
+}
+
+.article_excerpt:not(.visible) {
+  height: 0;
+  opacity: 0;
+}
+
+.article_excerpt, .article_meta {
+  transform-origin: bottom;
+}
+
+.article_meta {
+  padding: 10px 1.25rem 1.25rem;
+  color: var(--text);
+  position: relative;
+  z-index: 2;
+  transition: margin-top 0.5s;
+  background: var(--bg);
+}
+
+.article_meta.center_y {
+  transform-origin: center;
+  transition: transform 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (min-width: 42rem) {
+  .article_meta.center_y {
+    left: -2rem;
+  }
+}
+
+    .article_thumb {
+  display: grid;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  height: 15rem;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media screen and (min-width: 35rem) {
+  .article_thumb {
+    height: 22.5rem;
+  }
+}
+
+.article_thumb img {
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+.article_thumb::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 1;
+  background: var(--bg);
+  opacity: 0;
+  transition: opacity 0.1s ease-out;
+}
+
+.article_showcase .article_thumb {
+  height: 15rem;
+}
+
+.article_showcase .article_meta {
+  padding-top: 1.5rem;
+}
+
+.article:hover .article_thumb img {
+  transform: scale(1.1);
+}
+
+.article:hover .article_thumb::after {
+  transition: opacity 0.1s ease-out;
+  opacity: 0.5;
+}
+
+.article:hover .article_excerpt:not(.visible) {
+  height: 75px;
+  opacity: 1;
+}
+
+.article:hover .article_meta:not(.center_y) {
+  margin-top: -75px;
+}
+
+@media screen and (min-width: 769px) {
+  .article:hover .article_meta.center_y {
+    transform: translateX(-3rem);
+  }
+}
+
+.article:hover {
+  box-shadow: 0 1.5rem 6rem rgba(0, 0, 0, 0.17);
+}
+
+.article:hover a {
+  color: initial !important;
+}
+
+.article_hidden {
+  display: none;
+}
+.btn-readmore .cta-btn-text{background-position:left;background-repeat:no-repeat;background-size:14px;padding-left:20px}.cta-news .bg-img-container{left:0}.cta-news .bg-img-container:after{position:absolute;content:"";top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,0);transition:.3s all}
+.readmore-btn{border:none;background:0 0;border-radius:2px;background:#fde8f0;border:1px solid #fde8f0;color:#d40356;font-weight:700;font-size:15px;height:34px;margin-left:5px}.readmore-btn a{display:block;height:34px}.readmore-btn--desktop a{padding:.4375rem .4rem 0}@media (max-width:768px){.readmore-btn--desktop{display:none}}.readmore-btn--mobile{width:40px;line-height:34px;text-align:center}.readmore-btn--mobile a{padding-top:3px}.readmore-btn--mobile a img{display:inline-block;width:20px;height:20px}@media (min-width:769px){.readmore-btn--mobile{display:none}}.readmore-btn:focus,.readmore-btn:hover{border-color:#d40356;outline:none}.readmore-btn img.secure{height:14px;margin-right:2px;margin-bottom:-1px}.language-dropdown button{border:none;background:0 0;border-radius:2px;color:#3a25ff;background:#eeeaff;border:1px solid #eeeaff;display:flex;justify-content:center;align-items:center;padding:0 .4rem;height:34px;margin-left:5px;font-size:13px;text-transform:uppercase}@media (max-width:768px){.language-dropdown button{padding:0;text-align:center;width:40px}}.language-dropdown button:focus,.language-dropdown button:hover{border-color:#3a25ff;outline:none}.language-dropdown button .language-icon{margin-right:5px}
+.cta-btn-text{background-position:left;background-repeat:no-repeat;background-size:14px;padding-left:20px}.cta-news .bg-img-container{left:0}.cta-news .bg-img-container:after{position:absolute;content:"";top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,0);transition:.3s all}.cta-news .darken-img .bg-img-container:after{background:rgba(0,0,0,.25)}
+</style>
+<div style="text-align:center; padding:80px;">
+<h1>News</h1>
+<div style="color:green; font-size:180%; font-weight:bold;">What happen on Maamedia?</div>
+<br>
+
+
+<a href="https://maamedia.org/news/we-started-advertising-on-Instagram" class="grid-reverse"><div class="article_thumb" style="background-image:url(https://hbr.org/resources/images/article_assets/2021/02/Feb21_19_1218814245.jpg)"></div><div class="article_meta center_y"><time class="post_date">June 03, 2021</time><h3 class="article_title">We started adverising on Instagram</h3><div class="article_excerpt visible"><p></p><p>On May 29, 2021, Maamedia started advertising on Instagram; see results.</p><p></p></div></div></a>
+										<div class="readmore-btn">
+							<a href="https://maamedia.org/news/we-started-advertising-on-Instagram">
+								Read more							</a>
+						</div>
+
+
+<!--News Area: END-->
+
+</div>
+<div style="text-align:center">
 <h1>Create free account.</h1><span style="color:white; background-color:red" class="badge badge-danger">Recommended</span>
 <h1>Create free Masymanwiki article.</h1>
 <h1>Get good feelings and help others.</h1>
 <h1>Enjoy.</h1>
 <h1>We appreciate you.</h1><span style="color:white; background-color:red" class="badge badge-danger">At all times</span>
-</center>
+</div>
 <div class="container">
   <div class="jumbotron">
     <h1>We are Maamedia, a perfect family.</h1>
