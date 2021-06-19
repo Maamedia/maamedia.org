@@ -4,12 +4,15 @@
 <head>
   <title>Contact | Maamedia</title>
   <meta charset="utf-8">
-  <meta charset="utf-8">
+  <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Maamedia is a free, open source project that makes free tools and wikis. Made in Finland (Mito) and Indonesia (Puma).">
     <link rel="stylesheet" href="https://crm.maamedia.org/drafts/christmas/assets/css/global.css">
 <link rel='stylesheet' id='google-font-quicksand-montserrat-poppins-css' href='//fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C500%2C600%2C700%257CPoppins%3A400%2C400i%2C700%2C700i%257CMontserrat%3A400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.5' media='all'/>
-
+<link rel="shortcut icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
+<link rel="apple-touch-icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -64,7 +67,7 @@ body {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 8px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -131,7 +134,7 @@ function navMaamedia() {
 </script>
 
 <div class="topnav">
-  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;">Contact</a>
+  <a href="/" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;">Contact</a>
   <!-- Navigation links (hidden by default) -->
   <div id="maamediaLinks">
     <a href="/"><span class="fa fa-fw fa-home"></span> Home</a>
@@ -151,7 +154,7 @@ function navMaamedia() {
 
 <h1 class="masthead-heading text-uppercase mb-0">
 					Contact	to Maamedia			</h1>
-<div style="font-size:300%">Maamedia was founded in <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg" style="width:46px; height:30px"> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png" style="width:46px; height:30px"></div>
+<div style="font-size:300%">Maamedia was founded in <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg" alt="Flag of Finland" style="width:46px; height:30px"> and <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/1200px-Flag_of_Indonesia.svg.png" alt="Flag of Indonesia" style="width:46px; height:30px"></div>
 <hr style="height:6px;border-width:;color:black;background-color:black">
 <style>
 .section-email-title {
@@ -203,6 +206,7 @@ function navMaamedia() {
 <div style="border-radius: 3px; max-width: 800px; padding: 15px; margin:auto;margin-top: 15px;color: #7b7b7b;" align="center">
          <i class="fa fa-language"></i> <a href="https://meta.maamedia.org/wiki/Special:Translate?group=Maamedia.org">Help us with the translations</a> 
     <div style="font-size:140%">Legal information</div>
+        <a href="/legal">Legal Page</a><br>
          <a href="/privacy-policy">Privacy Policy</a><br>
          <a href="/tos">Terms of use</a><hr style="margin: 8px;">
     <div style="font-size:140%">Contact to Maamedia</div>
