@@ -6,15 +6,18 @@
   <html lang="en">
   <meta charset="utf-8">
   <meta property="og:url" content="https://maamedia.org" />
+  <meta name="robots" content="index, follow">
   <meta name="DC.element" content="Value" />
   <meta name="DCTERMS.element" content="Value" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Maamedia is a free, open source project that makes free tools and wikis. Made in Finland (Mito) and Indonesia (Puma).">
   <meta name="keywords" content="Maamedia, Masymanwiki, Maamedia Tools, toolskit, free guides, guidebook, free guidebook, free online tools, free online social network, how to">
-
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
     <link rel="stylesheet" href="https://crm.maamedia.org/drafts/christmas/assets/css/global.css">
 <link rel='stylesheet' id='google-font-quicksand-montserrat-poppins-css' href='//fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C500%2C600%2C700%257CPoppins%3A400%2C400i%2C700%2C700i%257CMontserrat%3A400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.5' media='all'/>
-
+<link rel="shortcut icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
+<link rel="apple-touch-icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -69,7 +72,7 @@ body {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 8px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -93,7 +96,7 @@ body {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 6px 2px;
   transition-duration: 0.4s;
   cursor: pointer;
 }
@@ -121,7 +124,6 @@ body {
   color: white;
 }
 
-
 </style>
 <script>
 function navMaamedia() {
@@ -136,12 +138,12 @@ function navMaamedia() {
 </script>
 
 <div class="topnav">
-  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" alt="Maamedia official logo" style="width:50px; height:auto;">Maamedia</a>
+  <a href="" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" alt="Maamedia official logo" style="width:50px; height:auto;">Maamedia</a>
   <!-- Navigation links (hidden by default) -->
   <div id="maamediaLinks">
-    <a href="/"><span class="fa fa-fw fa-home">Home</a>
-    <a href="#ourwork"><span class="fa fa-server"></span>Our work</a>
-    <a href="/contact"><span class="fa fa-inbox"></span>Contact</a>
+    <a href="/"><span class="fa fa-fw fa-home"></span> Home</a>
+    <a href="#ourwork"><span class="fa fa-server"></span> Our work</a>
+    <a href="/contact"><span class="fa fa-inbox"></span> Contact</a>
     <a href="/about"><span class="fa fa-info-circle"></span> About us</a>
     <a href="https://meta.maamedia.org/wiki/Special:CreateAccount"><span class="glyphicon glyphicon-user"></span> Create account</a>
     <a href="https://meta.maamedia.org/wiki/Special:UserLogin"><span class="glyphicon glyphicon-log-in"></span> Login</a>
@@ -322,6 +324,8 @@ function navMaamedia() {
 .readmore-btn{border:none;background:0 0;border-radius:2px;background:#fde8f0;border:1px solid #fde8f0;color:#d40356;font-weight:700;font-size:15px;height:34px;margin-left:5px}.readmore-btn a{display:block;height:34px}.readmore-btn--desktop a{padding:.4375rem .4rem 0}@media (max-width:768px){.readmore-btn--desktop{display:none}}.readmore-btn--mobile{width:40px;line-height:34px;text-align:center}.readmore-btn--mobile a{padding-top:3px}.readmore-btn--mobile a img{display:inline-block;width:20px;height:20px}@media (min-width:769px){.readmore-btn--mobile{display:none}}.readmore-btn:focus,.readmore-btn:hover{border-color:#d40356;outline:none}.readmore-btn img.secure{height:14px;margin-right:2px;margin-bottom:-1px}.language-dropdown button{border:none;background:0 0;border-radius:2px;color:#3a25ff;background:#eeeaff;border:1px solid #eeeaff;display:flex;justify-content:center;align-items:center;padding:0 .4rem;height:34px;margin-left:5px;font-size:13px;text-transform:uppercase}@media (max-width:768px){.language-dropdown button{padding:0;text-align:center;width:40px}}.language-dropdown button:focus,.language-dropdown button:hover{border-color:#3a25ff;outline:none}.language-dropdown button .language-icon{margin-right:5px}
 .cta-btn-text{background-position:left;background-repeat:no-repeat;background-size:14px;padding-left:20px}.cta-news .bg-img-container{left:0}.cta-news .bg-img-container:after{position:absolute;content:"";top:0;bottom:0;right:0;left:0;background:rgba(0,0,0,0);transition:.3s all}.cta-news .darken-img .bg-img-container:after{background:rgba(0,0,0,.25)}
 </style>
+
+<br><br>
 <div style="text-align:center; padding:80px;">
 <h1>News</h1>
 <div style="color:green; font-size:180%; font-weight:bold;">What happen on Maamedia?</div>
@@ -336,6 +340,44 @@ function navMaamedia() {
 
 
 <!--News Area: END-->
+<br><br>
+<div style="font-size:250%">Contact</div>
+<div style="font-size:110%; font-weight:bold;">You are in the right place! The form below is for contact. If you would like Maamedia to contact you, please fill in the form and describe your case/question.</div>
+<br>
+<form class="contact-form" action="contactform.php" method="post">
+    <input type="text" name="name" placeholder="Full name">
+    <input type="text" name="mail" placeholder="E-mail">
+    <input type="text" name="subject" placeholder="Subject">
+    <textarea name="message" placeholder="Message"></textarea>
+    <button class="button work" type="submit" name="submit">Send</button>
+</form>
+<style>
+.contact-form {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: green;
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+textarea[name=message] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+  color: green;
+}
+
+</style>
 
 </div>
 <div style="text-align:center">
@@ -356,6 +398,7 @@ function navMaamedia() {
   <h1 style="color:white; background-color:black; padding:40px; margin:0; text-align:center;">Made with 🤍 Maamedia</h1>
 <div style="border-radius: 3px; max-width: 800px; padding: 15px; margin:auto;margin-top: 15px;color: #7b7b7b;" align="center">
     <div style="font-size:140%">Legal Information</div>
+        <a href="/legal">Legal Page</a><br>
          <a href="/privacy-policy">Privacy Policy</a><br>
          <a href="/tos">Terms of Use</a><hr style="margin: 8px;">
     <div style="font-size:140%">Contact to Maamedia</div>
