@@ -4,12 +4,15 @@
 <head>
   <title>Legal Information | Maamedia</title>
   <meta charset="utf-8">
-  <meta charset="utf-8">
+  <html lang="en">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Legal information of the Maamedia project concerning Maamedia. Maamedia is a free, open source project that makes free tools and wikis. Made in Finland (Mito) and Indonesia (Puma).">
     <link rel="stylesheet" href="https://crm.maamedia.org/drafts/christmas/assets/css/global.css">
 <link rel='stylesheet' id='google-font-quicksand-montserrat-poppins-css' href='//fonts.googleapis.com/css?family=Quicksand%3A300%2C400%2C500%2C600%2C700%257CPoppins%3A400%2C400i%2C700%2C700i%257CMontserrat%3A400%2C500%2C600%2C700&#038;subset=latin%2Clatin-ext&#038;display=swap&#038;ver=5.5' media='all'/>
-
+<link rel="copyright" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="license" href="//creativecommons.org/licenses/by-sa/3.0/">
+<link rel="shortcut icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
+<link rel="apple-touch-icon" href="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -64,7 +67,7 @@ body {
   display: block;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 8px;
 }
 
 /* Add a grey background color on mouse-over */
@@ -134,7 +137,7 @@ function navMaamedia() {
 </script>
 
 <div class="topnav">
-  <a href="#home" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" style="width:50px; height:auto;">Maamedia Legal Information</a>
+  <a href="/" class="active"><img src="https://commons.maamedia.org/images/1/1a/Maamedia_Logo.png" alt="Maamedia's logo." style="width:50px; height:auto;">Maamedia Legal Information</a>
   <!-- Navigation links (hidden by default) -->
   <div id="maamediaLinks">
     <a href="/"><span class="fa fa-fw fa-home"></span> Home</a>
@@ -209,7 +212,7 @@ The following information is collected from users registered on the wiki:
 <li>First and last name, if set by the user</li>
 <li>Timezone</li>
 <li>Registration time</li><br><br>
-Whenever an edit or log function (such as moving or deleting a page) is performed on the wiki, a trace is left in the address bar.<br><br> Address Revealer is a secure tool that can be used by founders, wiki administrators, and address revealer users. The tool displays the IP addresses of all registered users who have been logged or edited.<br> In addition, the tool can retrieve a specific IP address and find out if it has been modified for Maamedia wikis or if it has a previous wiki account.<br><br> Address bar users are very reliable and have a common policy that can be read on Maamedia's Meta-Wiki.
+Whenever an edit or log function (such as moving or deleting a page) is performed on the wiki, a trace is left in the address bar.<br><br> CheckUser is a secure tool that can be used by founders, Stewards, and CheckUsers users. The tool displays the IP addresses of all registered users who have been logged or edited.<br> In addition, the tool can retrieve a specific IP address and find out if it has been modified for Maamedia wikis or if it has a previous wiki account.<br><br> Address bar users are very reliable and have a common policy that can be read on Maamedia's Meta-Wiki.
 The user does not usually have the right to ask or retrieve from Maamedia the information that Maamedia has had time to collect by a certain time. <br><br>However, this has become new to the Mawonder social network, meaning that in Mawonder the user is able to create a file into which the user selects the information that Maamedia has collected and which the user wants to see.
 <br>
 <h1>Where the data is stored</h1>
@@ -228,7 +231,7 @@ If you wish, you will receive a receipt for the purchase. The buyer (or donor) a
 
 Maamedia guarantees that all donations and payments received will be used for the maintenance and upkeep of the pages and servers.<br><br> Maamedia survives on servers, and the server must have a large amount of space, or memory. 50 percent of the payments you receive go to the purchase of memory and the rest to the maintenance of services, speed and websites, and the cost of domains. <br><br>Maamedia keeps a record on Meta-Wiki of where Maamedia spends money, how much money has been spent on each purchase, and also keeps a record of the payments and donations it receives on the same page. The page can be found as “Payment history” but is only edited by the founders or treasurers (the founders are currently also treasurers).
 Maamedia does not aim for operating profit or turnover and does not compete with others. Maamedia accepts donations from both private individuals and companies. Maamedia considers the maximum donation amount to be 30 euros per person / company. <br><br>It would be a good idea to donate to the same person or company only once every three weeks.
-The buyer or donor has the right to know where his money has gone. Information on these issues can be requested from the founders of Maediaia either by emailing <code>mito@maamedia.org</code> or <code>puma@maamedia.org</code>. <br>Receipts and other information can be sent to applicants if they do not understand or want to read the Payment history page in Meta.
+The buyer or donor has the right to know where his money has gone. Information on these issues can be requested from the founders of Maamedia either by emailing <code>mito@maamedia.org</code> or <code>puma@maamedia.org</code>. <br>Receipts and other information can be sent to applicants if they do not understand or want to read the Payment history page in Meta.
 <h1>Maamedia languages</h1>
 Maamedia is largely multilingual, with a few exceptions. The website maamedia.org is written in many different languages and can still be translated.<br> Translations are often done in Meta-Wiki using the Translate action page. Wikis are all multilingual because MediaWiki software is developed in all the languages of the world. <br><br>New translations can be made freely on Translatewiki.net, which is edited every day and from where new translations are also brought to Maamedia wikis every week.
 <br><br>
@@ -242,7 +245,7 @@ Maamedia has a number of multilingual Masymanwiki wikis, some of which, however,
 <h1>Ages</h1>
 
 <h3>SOCIAL NETWORKS</h3>
-Social networks like Mawonder have a minimum age of 13 years. This is to protect children under the age of 13 from content that does not belong to them. There is no age limit on wikis, but some of its user groups (such as the address revealer) have age limits. <br>Below is more information about wiki age limits.
+Social networks like Mawonder have a minimum age of 13 years. This is to protect children under the age of 13 from content that does not belong to them. There is no age limit on wikis, but some of its user groups (such as the CheckUser) have age limits. <br>Below is more information about wiki age limits.
 <br><br>
 In a social network, it would be good for people under the age of 15 to also browse it under the supervision of their parents.<br> It is possible to write anything on a social network and they can show anyone almost anything, even if the sites have enhanced screening and verification.
 
@@ -308,6 +311,7 @@ Maamedia is gradually setting up a so-called government for Maamedia, which cons
 <div style="border-radius: 3px; max-width: 800px; padding: 15px; margin:auto;margin-top: 15px;color: #7b7b7b;" align="center">
          <i class="fa fa-language"></i> <a href="https://meta.maamedia.org/wiki/Special:Translate?group=Maamedia.org">Help us with the translations</a> 
     <div style="font-size:140%">Legal information</div>
+        <a href="/legal">Legal Page</a><br>
          <a href="/privacy-policy">Privacy Policy</a><br>
          <a href="/tos">Terms of use</a><hr style="margin: 8px;">
     <div style="font-size:140%">Contact to Maamedia</div>
